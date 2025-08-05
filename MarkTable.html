@@ -4,13 +4,23 @@
     <title>Mark Table</title>
     <style>
         table, tr, td, th{
-            border: 0.5px solid grey;
+            border-bottom: 0.5px solid grey;
             border-collapse: collapse;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color: rgb(219, 166, 166);
+        }
+        body{
+            text-align: center;
+        }
+        table{
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-<h1>Mark Table</h1>
+<h1 style="color: rgb(53, 6, 6);">Students score</h1>
 <table>
     <tr>
         <th>S/N</th>
