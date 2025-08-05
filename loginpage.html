@@ -3,36 +3,76 @@
 <head>
     <title>Login page</title>
     <style>
-        div{
-            margin: 0 auto;
-            
-            text-align: center;
-            border-radius: 16px;
-            background-color: rgb(55, 9, 9);
-            padding-top: 16px;
-            padding-bottom: 16px;
-            color: wheat;
+        *{
+            box-sizing: border-box;
         }
-        input{
+        div{
+            margin: 50px auto;
+            text-align: center;
+            border-radius: 8px;
+            background-color: rgb(228, 220, 220);
+            padding: 16px;
+            color: rgb(66, 45, 5);
+            width: 50%;
+        }
+        
+        body{
+            background-color: rgb(29, 3, 3);
+        }
+        label{
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .fgroup{
+            margin: 0 auto;
+            padding: 0;
+            text-align: left; 
             padding: 8px;
             border-radius: 8px;
+            width: 100%;
         }
-        body{
-            background-color: black;
+        .fgroup input{
+            margin: 0 auto;
+            padding: 8px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .buyt{
+            background-color: rgb(43, 6, 6) ; 
+            color: azure; 
+            padding: 8px 64px; 
+            margin: 0 auto;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .belowbut{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: -8px auto;
         }
     </style>
 </head>
 <body>
 <div>
 <h1>Login</h1>
+<div class="fgroup">
 <label for="username">Username</label><br>
 <input type="text" id="username" name="username" placeholder="enter username" required><br><br>
+</div>
+
+<div class="fgroup">
 <label for="password">Password</label><br>
 <input type="password" id="password" name="password" placeholder="input password" required><br><br>
-<input type="checkbox" id="remember Me" name="remember Me">
-<label for="remember Me">Remember me</label><br><br>
-<input type="button" value="Login"><br>
-<a href="#passwordforgottenpage" style="text-decoration: none; font-size: smaller;">Forgot Password?</a>
+</div>
+
+<input type="button" value="Login" class="buyt"><br>
+
+<div class="belowbut">
+<div style="margin: 0; display: flex; width: 100%;"><input type="checkbox" id="remember Me" name="remember Me">Remember me</div>
+<a href="#passwordforgottenpage" style="text-decoration: none; font-size: smaller; width: 50%;">Forgot Password?</a>
+</div>
 </div>
 </body>
 </html>
