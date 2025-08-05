@@ -2,8 +2,28 @@
 <html lang="en">
 <head>
     <title>Login page</title>
+    <style>
+        div{
+            margin: 0 auto;
+            
+            text-align: center;
+            border-radius: 16px;
+            background-color: rgb(55, 9, 9);
+            padding-top: 16px;
+            padding-bottom: 16px;
+            color: wheat;
+        }
+        input{
+            padding: 8px;
+            border-radius: 8px;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
+<div>
 <h1>Login</h1>
 <label for="username">Username</label><br>
 <input type="text" id="username" name="username" placeholder="enter username" required><br><br>
@@ -13,6 +33,6 @@
 <label for="remember Me">Remember me</label><br><br>
 <input type="button" value="Login"><br>
 <a href="#passwordforgottenpage" style="text-decoration: none; font-size: smaller;">Forgot Password?</a>
-
+</div>
 </body>
 </html>
