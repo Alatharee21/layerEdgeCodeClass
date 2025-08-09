@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color & Box Shadow</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                text-align: center;
+                background-color: black;
+            }
+            .card{
+                display: flex;
+                flex: 1;
+                gap: 24px;
+                margin-left: 120px;
+                margin-right: 120px;
+            }
+            .cardprod{
+                text-align: center;
+                background-color: white;
+                border-radius: 16px;
+                width: 50%;
+                padding: 8px;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: hidden;
+                box-shadow: 0px 4px 12px rgb(231, 212, 212);
+            }
+            .cardprod:hover{
+                background-color: rgb(64, 59, 90);
+                color: aliceblue;
+            }
+            select{
+                padding: 6px;
+                border-radius: 8px;
+                border: 3px solid grey;
+            }
+            .addvCart{
+                display: inline-flex;
+                gap: 40px;
+            }
+            .object{
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+            }
+            .object img{
+                width: 100%;
+                height: 100%;
+                object-fit: hidden;
+                border-radius: 16px;
+            }
+            h1{
+                color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Product Card</h1>
+        <div class="card">
+            <div class="cardprod">
+                <div class="object">
+                <img src="/images/Aerobrew.webp" alt="Aero brew">
+                </div>
+
+                <div style="text-align: left;">
+                <h4>AeroBrew</h4>
+                <p style="font-size: smaller;">A portable coffee maker that brews barista-quality coffee anywhere, powered by rechargeable battery.</p>
+                </div>
+
+                <div>
+                <select>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                </select>
+                <select>
+                    <option>Device with pouch</option>
+                    <option>Just the device</option>
+                    <option>Device with Powerbank</option>
+                </select>
+                </div><hr>
+                <div class="addvCart">
+                <p>$245</p>
+                <button style="border-radius: 16px; background-color: blueviolet; color: white;">+ Add to cart</button>
+                </div>
+            </div>
+            <div class="cardprod">
+                <div class="object">
+                <img src="/images/Glowtrack.webp" alt="Glow track">
+                </div>
+
+                <div style="text-align: left;">
+                <h4>GlowTrack</h4>
+                <p style="font-size: smaller;">A fitness tracker with real-time hydration reminders and night-mode glow display</p>
+                </div>
+
+                <div>
+                <select>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                </select>
+                <select>
+                    <option>Device with pouch</option>
+                    <option>Just the device</option>
+                    <option>Device with Powerbank</option>
+                </select>
+                </div><hr>
+                <div class="addvCart">
+                <p>$245</p>
+                <button style="border-radius: 16px; background-color: blueviolet; color: white;">+ Add to cart</button>
+                </div>
+            </div>
+            <div class="cardprod">
+                <div class="object">
+                <img src="/images/Smartsprout.webp" alt="smart sprout">
+                </div>
+
+                <div style="text-align: left;">
+                <h4>SmartSprout</h4>
+                <p style="font-size: smaller;">An indoor gardening kit that uses AI to adjust light and water for perfect plant growth.</p>
+                </div>
+
+                <div>
+                <select>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                </select>
+                <select>
+                    <option>Device with pouch</option>
+                    <option>Just the device</option>
+                    <option>Device with Powerbank</option>
+                </select>
+                </div><hr>
+                <div class="addvCart">
+                <p>$245</p>
+                <button style="border-radius: 16px; background-color: blueviolet; color: white;">+ Add to cart</button>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
