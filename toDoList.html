@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todolist with checkbox</title>
+        <style>
+            ul{
+                list-style-type: none;
+            }
+            .container{
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                width: 60%;
+                padding: 16px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 32px;
+            }
+            li{
+                text-align: left;
+            }
+            input[type="checkbox"]{
+                cursor: pointer;
+            }
+            input:checked{
+                color: brown;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h2>To DoList</h2>
+        <ul>
+            <li><input type="checkbox">Plan the day - Write down priorities and set time blocks for each task.</li><br>
+            <li><input type="checkbox">Check emails/messages - Respond to important ones and archive or delete the rest.</li><br>
+            <li><input type="checkbox">Complete main work task - Focus on one high-impact task before midday.</li><br>
+            <li><input type="checkbox">Take a 10-minute break - Step away from your desk to rest your eyes and mind.</li><br>
+            <li><input type="checkbox">Review progress - At the end of the day, note what's done and carry over pending tasks.</li>
+        </ul>
+        </div>
+    </body>
+</html>
