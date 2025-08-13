@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                text-align: center;
+                background-color: rgb(241, 221, 221);
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+            }
+            .indicator{
+                height: 80px;
+                width: 100px;
+                background-color: blue;
+            }
+            .indicator2{
+                height: 80px;
+                width: 100px;
+                background-color: white;
+            }
+            .indicator3{
+                height: 80px;
+                width: 100px;
+                background-color: red;
+            }
+            .container2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                padding: 48px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+            }
+            .indicator4{
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background-color: red;
+            }
+            .container3{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #eee;
+                border-radius: 20px;
+                overflow: hidden;
+                height: 25px;
+            }
+            .pbar{
+                height: 100%;
+                width: 60%;
+                line-height: 25px;
+                background-color: red;
+                transition: width 0.4s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flags</h1>
+        <h2>France flag</h2>
+        <div class="container">
+            <div class="indicator">
+            </div>
+            <div class="indicator2">
+            </div>
+            <div class="indicator3">
+            </div>
+        </div>
+        <h2>Japan flag</h2>
+        <div class="container2">
+            <div class="indicator4">
+            </div>
+        </div>
+        <h3>Progress bar</h3>
+        <div class="container3">
+            <div class="pbar">
+            </div>
+        </div>
+    </body>
+</html>
