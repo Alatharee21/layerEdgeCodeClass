@@ -18,12 +18,16 @@
             li{
                 text-align: left;
             }
-            input[type="checkbox"]{
-                cursor: pointer;
+            li > input[type="checkbox"]{
+                display: none;
             }
-            input:checked{
+            li > input[type="checkbox"]:checked{
+                display: inline-block;
+            }
+            input[type="checkbox"]:checked ~ label{
                 color: brown;
                 cursor: pointer;
+                text-decoration: line-through;
             }
         </style>
     </head>
@@ -31,11 +35,36 @@
         <div class="container">
         <h2>To DoList</h2>
         <ul>
-            <li><input type="checkbox">Plan the day - Write down priorities and set time blocks for each task.</li><br>
-            <li><input type="checkbox">Check emails/messages - Respond to important ones and archive or delete the rest.</li><br>
-            <li><input type="checkbox">Complete main work task - Focus on one high-impact task before midday.</li><br>
-            <li><input type="checkbox">Take a 10-minute break - Step away from your desk to rest your eyes and mind.</li><br>
-            <li><input type="checkbox">Review progress - At the end of the day, note what's done and carry over pending tasks.</li>
+            <li>
+                <input type="checkbox" id="task1">
+                <label for="task1">
+                    Plan the day - Write down priorities and set time blocks for each task.
+                </label>
+            </li><br>
+            <li>
+                <input type="checkbox" id="task2">
+                <label for="task2">
+                    Review progress - At the end of the day, note what's done and carry over pending tasks.
+                </label>
+            </li><br>
+            <li>
+                <input type="checkbox" id="task3">
+                <label for="task3">
+                    Take a 10-minute break - Step away from your desk to rest your eyes and mind.
+                </label>
+            </li><br>
+            <li>
+                <input type="checkbox" id="task4">
+                <label for="task4">
+                    Complete main work task - Focus on one high-impact task before midday.
+                </label>
+            </li><br>
+            <li>
+                <input type="checkbox" id="task5">
+                <label for="task5">
+                    Check emails/messages - Respond to important ones and archive or delete the rest.
+                </label>
+            </li>
         </ul>
         </div>
     </body>
