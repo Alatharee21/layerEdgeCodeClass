@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex, Grid and Position</title>
+        <style>
+            .containerF{
+                display: flex;
+                width: 500px;
+                height: 250px;
+                flex-direction: row;
+                border: 1px solid blue;
+                border-radius: 16px;
+                padding: 4px;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .containerG{
+                display: grid;
+                width: 500px;
+                height: 600px;
+                grid-template-rows: repeat(3, 100px);
+                grid-template-columns: repeat(auto-fit 3, 1fr);
+                grid-template-areas: 
+                'Header header'
+                'Aside aside'
+                'Footer footer'
+                
+                ;
+                /*grid-auto-rows: 100px;
+                grid-auto-flow: column;*/
+                border: 1px solid blue;
+                border-radius: 16px;
+                padding: 4px;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                border: 1px solid blue;
+                border-radius: 8px;
+            }
+            .boxG{
+                width: auto;
+                height: 100px;
+                background-color: rgb(65, 65, 189);
+                border: 8px solid blue;
+                border-radius: 4px;
+            }
+            .box1{
+               height: 200px;
+            }
+            .box3{
+                flex-grow: 1;
+                height: 100px;
+            }
+            .box2{
+                flex-shrink: 1;
+            }
+            /*.boxa{
+                /*grid-row-start: 2;
+                grid-column-start: 2;
+                grid-row-end: 3;
+                grid-column-end: 4;
+                background-color: brown;
+                width: auto;
+                grid-row: 2 / 3;
+                grid-column: 2 / 4 ;
+            }
+            .boxb{
+                grid-row: span 2;
+                grid-column: span 2 ;
+            }*/
+            .boxc{
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flex box</h1>
+        <div class="containerF">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+
+        <h1>Grid box</h1>
+        <div class="containerG">
+            <div class="boxG boxa"></div>
+            <div class="boxG boxb"></div>
+            <div class="boxG boxc"></div>
+            <div class="boxG boxb"></div>
+            <div class="boxG boxc"></div>
+            <div class="boxG boxb"></div>
+            <div class="boxG boxc"></div>
+        </div>
+    </body>
+</html>
