@@ -1,0 +1,48 @@
+.container3{
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #eee;
+                border-radius: 20px;
+                overflow: hidden;
+                height: 25px;
+            }
+
+.pbar{
+                height: 100%;
+                width: 90%;
+                line-height: 25px;
+                background-color: red;
+                border-radius: 20px;
+                transition: transform 3s ease;
+                transform: translateX(300px);
+            }
+.container4{
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #eee;
+                border-radius: 20px;
+                overflow: hidden;
+                height: 25px;
+            }
+
+
+
+@keyframes slideinLeft {
+    from{
+        transform: translateX(-390px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.pbar1{
+                height: 100%;
+                width: 100%;
+                line-height: 25px;
+                background-color: rgb(47, 0, 255);
+                border-radius: 20px;
+                animation: slideinLeft 4s ease 0s infinite normal none;
+            }

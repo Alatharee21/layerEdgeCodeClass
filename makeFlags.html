@@ -13,15 +13,17 @@
             .container{
                 display: flex;
                 flex-direction: row;
-                width: 50%;
+                width: 300px;
                 margin-left: auto;
                 margin-right: auto;
                 background-color: white;
+                border-radius: 8px;
             }
             .indicator{
                 height: 80px;
                 width: 100px;
                 background-color: blue;
+                border-radius: 8px 0 0 8px;
             }
             .indicator2{
                 height: 80px;
@@ -32,6 +34,7 @@
                 height: 80px;
                 width: 100px;
                 background-color: red;
+                border-radius: 0 8px 8px 0;
             }
             .container2{
                 display: flex;
@@ -42,6 +45,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 background-color: white;
+                border-radius: 8px;
             }
             .indicator4{
                 height: 80px;
@@ -49,23 +53,8 @@
                 border-radius: 50%;
                 background-color: red;
             }
-            .container3{
-                width: 50%;
-                margin-left: auto;
-                margin-right: auto;
-                background-color: #eee;
-                border-radius: 20px;
-                overflow: hidden;
-                height: 25px;
-            }
-            .pbar{
-                height: 100%;
-                width: 60%;
-                line-height: 25px;
-                background-color: red;
-                transition: width 0.4s ease;
-            }
         </style>
+        <link rel="stylesheet" href="styles/animation.css">
     </head>
     <body>
         <h1>Flags</h1>
@@ -83,9 +72,14 @@
             <div class="indicator4">
             </div>
         </div>
-        <h3>Progress bar</h3>
+        <h3>Loading bar</h3>
         <div class="container3">
             <div class="pbar">
+            </div>
+        </div>
+        <h3>progress bar</h3>
+        <div class="container4">
+            <div class="pbar1">
             </div>
         </div>
     </body>
