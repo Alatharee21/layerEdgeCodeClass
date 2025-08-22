@@ -88,16 +88,28 @@ for(i = 0; i < 101; i++){
     } 
 };
 
-//Q9 Functions + Loops(Incomplete)
+//Q9 Functions + Loops
 function checkPrime(n){
-    for(i=0; i <= n; i++){
-        if(i % 2 == 0){
-            console.log(true);
-        }
-        else{
-            console.log(false);
+    if (n <= 1){
+        console.log("Not a Prime");
+        return;
+    }
+
+    for(let i=2; i <= Math.sqrt(n); i++){
+        if(n % 1 == 0){
+            console.log("Not a prime");
+            return;
         }
     }
-};
+            console.log("Prime");
+    };
 
-checkPrime(3);
+console.log(checkPrime(4));
+
+//Q10 Array + Loop
+let numArray = [2, 4, 6,34 , 65];
+let sum = 0;
+
+for(i=0; i < numArray.length; i++){
+    console.log(sum +=numArray[i]);
+}
