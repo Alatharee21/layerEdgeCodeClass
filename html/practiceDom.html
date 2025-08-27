@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GreatStack</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div>
+            <p id="message">Javascript DOM!</p>
+            <p id="message">Javascript</p>
+        </div>
+
+        <div>
+            <input type="radio" name="lang" value="Javascript">
+            <input type="radio" name="lang" value="python">
+        </div>
+
+        <div>
+            <h1>First heading</h1>
+            <h1>Second heading</h1>
+            <h1>Third heading</h1>
+            <h1>Fourth heading</h1>
+        </div>
+
+        <div>
+            <h1 class="message">first heading</h1>
+            <h1 class="message">sirst heading</h1>
+            <h1 class="message">tirst heading</h1>
+        </div>
+    </body>
+    <script>
+        let msg = document.getElementById("message");
+        console.log(msg)
+
+        let language = document.getElementsByName("lang");
+        console.log(language);
+
+        let heading = document.getElementsByTagName("h1");
+        console.log(heading);
+
+        let headingCN = document.getElementsByClassName("message");
+        console.log(headingCN);
+    </script>
+</html>
