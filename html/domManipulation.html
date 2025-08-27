@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <style>
+            .box{
+                background-color: lightblue;
+                width: 400px;
+                height: 400px;
+                color: white;
+                padding: 16px;
+                text-align: center;
+                border-radius: 16px;
+            }
+        </style>
+    </head>
     <body>
-        <p id="demo"></p>
+        <div class="box">
+        <p id="demo">Hello World!</p>
+        </div>
+
+        <ul id="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Pricing</li>
+        </ul>
+
+        <button onclick="changeColor()">Change Color</button>
     </body>
     <script>
-        
+        //Q1
+        let msg = document.getElementById("demo");msg.innerHTML= "Hello, DOM!";
+        console.log(msg);
+
+        /*let value = true;
+        let box = document.getElementsByClassName("box");
+        let color = "";
+
+     function changeColor(){
+            value = !value
+            console.log(value);
+            if(value){
+                color = "background-color:lightblue";
+            }
+            else{
+                color = "";
+            }
+            box.innerHTML = <div style="${color}">This is a TEST</div>
+            console.log(color);
+        };*/
+    
+        //Q3
+        let menu = document.getElementById("list");
+        let list = document.createElement("li");
+        list.innerHTML = "New Item";
+
+        menu.appendChild(list);
+
+        console.log(menu);
+        console.log(menu.textContent);
+        console.log(menu.innerText);
     </script>
 </html>
