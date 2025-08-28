@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rasheed Learning</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Project</li>
+        </ul>
+    </body>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML = "<p>Rasheed learning DOM</p>";
+        div.id = "title";
+        document.body.appendChild(div);
+        console.log(div);
+
+        let menu = document.getElementById("menu");
+        let list = document.createElement("li");
+        list.innerHTML = "Contact";
+
+        menu.appendChild(list);
+        console.log(menu);
+
+        console.log(menu.textContent);
+        console.log(menu.innerText);
+
+        
+
+        menu.after("<p>The goal</p>")
+    </script>
+</html>
