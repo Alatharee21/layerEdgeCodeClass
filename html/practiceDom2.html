@@ -32,6 +32,30 @@
 
         
 
-        menu.after("<p>The goal</p>")
+        menu.after("The goal");
+        menu.append(div);
+
+        let menu2 = document.createElement("div");
+        menu2.className = "secondM";
+        document.body.appendChild(menu2);
+
+        let paragraph = document.createElement("p");
+        paragraph.innerHTML = "Consistency is key";
+        menu2.append(paragraph, "Another text");
+       
+        menu2.prepend("Another text pre div");
+
+        menu2.insertAdjacentHTML("afterbegin", "<p>After begin</p>");
+        menu2.insertAdjacentHTML("beforebegin", "<p>Before begin</p>");
+        menu2.insertAdjacentHTML("beforeend", "<p>Before end</p>");
+        menu2.insertAdjacentHTML("afterend", "<p>After end</p>");
+
+        let newNode = menu2.cloneNode(true);
+        console.log(newNode);
+
+        menu.removeChild(menu.firstElementChild);
+        menu.removeChild(menu.lastElementChild);
+
+        console.log(menu2);
     </script>
 </html>
