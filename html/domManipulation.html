@@ -2,22 +2,20 @@
 <html>
     <head>
         <style>
-            .box{
-                background-color: lightblue;
-                width: 400px;
-                height: 400px;
-                color: white;
-                padding: 16px;
-                text-align: center;
-                border-radius: 16px;
-            }
         </style>
     </head>
     <body>
-        <div class="box">
+        <!--Q1-->
+        <div>
         <p id="demo">Hello World!</p>
         </div>
 
+        <!--Q2-->
+        <div id="box" style="background-color: red; color: white; padding: 16px; text-align: center; border-radius: 16px;">
+            <p>BG color changed with js</p>
+        </div>
+
+        <!--Q3-->
         <ul id="list">
             <li>Home</li>
             <li>About</li>
@@ -31,22 +29,11 @@
         let msg = document.getElementById("demo");msg.innerHTML= "Hello, DOM!";
         console.log(msg);
 
-        /*let value = true;
-        let box = document.getElementsByClassName("box");
-        let color = "";
 
-     function changeColor(){
-            value = !value
-            console.log(value);
-            if(value){
-                color = "background-color:lightblue";
-            }
-            else{
-                color = "";
-            }
-            box.innerHTML = <div style="${color}">This is a TEST</div>
-            console.log(color);
-        };*/
+        //Q2
+        let box = document.getElementById("box");
+
+        box.style.cssText += "background-color: lightblue";
     
         //Q3
         let menu = document.getElementById("list");

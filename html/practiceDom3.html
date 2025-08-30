@@ -18,6 +18,8 @@
         </ul>
 
         <input type="text" id="username" placeholder="username" style="padding: 8px; border-radius: 4px; border: 0.5px solid purple;">
+
+        <h1 id="title" class="main message">Rasheed</h1>
     </body>
     <script>
         let menu = document.getElementById("menu");
@@ -41,5 +43,22 @@
         inputBox.style.cssText += "color: white";
 
         console.log(window.getComputedStyle(menu).backgroundColor);
+
+        let title = document.getElementById("title");
+
+        title.className += " new";
+
+        console.log(title);
+
+        title.classList.add("new2", "new3", "new4")
+        title.classList.remove("new2", "new4")
+        title.classList.replace("message", "msg")
+
+        title.classList.toggle("rahs");//adds if not in list
+
+        
+        console.log(title.classList);
+        console.log(title.classList.contains("rasheed"));
+        
     </script>
 </html>

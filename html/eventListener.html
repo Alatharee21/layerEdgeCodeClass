@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="container">
+            <button type="button" onclick="displayMsg()">Click here</button>
+            <br>
+            <button id="btn">Click here</button>
+        </div>
+
+        <script>
+            function displayMsg() {
+                console.log("Message seen");
+            }
+
+            let btn = document.getElementById("btn");
+
+            function displayP() {
+                console.log("This works when clicked");
+            }
+
+            btn.addEventListener('click', displayP);
+
+            btn.removeEventListener('click', displayP);
+
+        </script>
+    </body>
+</html>
