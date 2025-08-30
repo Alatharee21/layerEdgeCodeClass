@@ -3,12 +3,43 @@
     <head>
         <title>DOM attributes</title>
         <style>
+            #menu{
+                list-style-type: none;
+                background-color: lightgreen;
+                width: 50%;
+                align-content: space-between;
+            }
         </style>
     </head>
     <body>
-        
+        <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+
+        <input type="text" id="username" placeholder="username" style="padding: 8px; border-radius: 4px; border: 0.5px solid purple;">
     </body>
     <script>
+        let menu = document.getElementById("menu");
+
+        let inputBox = document.getElementById("username");
         
+        console.log(inputBox.attributes);
+        console.log(inputBox.getAttribute("type"));
+        inputBox.setAttribute("class", "user");
+
+        console.log(inputBox);
+
+        inputBox.removeAttribute("class");
+         
+        console.log(inputBox.hasAttribute("class"));
+
+        console.log(inputBox.style);
+        console.log(inputBox.style.border);
+
+        inputBox.style.backgroundColor = "brown";
+        inputBox.style.cssText += "color: white";
+
+        console.log(window.getComputedStyle(menu).backgroundColor);
     </script>
 </html>
