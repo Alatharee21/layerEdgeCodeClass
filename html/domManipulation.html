@@ -40,6 +40,7 @@
 
         <!--Q6-->
         <div>
+            <p>There is a class to be added here</p>
             <button id="card">Toggles active class</button>
         </div><br>
 
@@ -49,6 +50,14 @@
             <input type="text" id="nameInput" name="nameInput" placeholder="Input your name"><br><br>
             <input type="button" id="display" value="submit">
         </form>
+
+        <!--Q8-->
+        <img src="images/handMoney.jpg" alt="Glowtrack" width="400" height="400" id="profilePic">
+
+        <button id="chagatrr" onclick="changeAttr()">Change picture src atrribute</button>
+
+        <!--Q9-->
+        <div id="container"></div>
     </body>
     <script>
         //Q1
@@ -121,5 +130,31 @@
         neww.id = "Output";
 
         replaceCont.replaceChild(neww, nameInput)
+
+        //Q8
+        function changeAttr(){
+        let profilePic = document.getElementById("profilePic");
+
+        profilePic.removeAttribute("src");
+        let newSrc = profilePic.setAttribute("src", "images/profile.jpg");
+
+        console.log(profilePic.attributes);
+        };
+
+        //Q9
+        let container = document.getElementById("container");
+
+        let paragraph1 = document.createElement("p");
+        paragraph1.innerHTML = "Paragraph 1";
+        let paragraph2 = document.createElement("p");
+        paragraph1.innerHTML = "Paragraph 2";
+        let paragraph3 = document.createElement("p");
+        paragraph1.innerHTML = "Paragraph 3";
+        let paragraph4 = document.createElement("p");
+        paragraph1.innerHTML = "Paragraph 4";
+        let paragraph5 = document.createElement("p");
+        paragraph1.innerHTML = "Paragraph 5";
+
+        container.append(paragraph1, paragraph2, paragraph3, paragraph4, paragraph5);
     </script>
 </html>
