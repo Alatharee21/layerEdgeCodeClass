@@ -48,9 +48,10 @@
         <hr style="width: 50%;">
         <form id="replaceCont">
             <input type="text" id="nameInput" name="nameInput" placeholder="Input your name"><br><br>
-            <input type="button" id="display" value="submit">
+            <input type="button" id="display" value="Display">
         </form>
 
+        <p id="output"></p>
         <!--Q8-->
         <img src="/images/handMoney.jpg" alt="Glowtrack" width="400" height="400" id="profilePic">
 
@@ -130,15 +131,18 @@
         card.classList.toggle("active");
         console.log(card.classList);
 
-        //Q7 - Not completed yet
-        let nameInput = document.getElementById("nameInput");
+        //Q7
+        
         let display = document.getElementById("display");
 
-        let neww = document.createElement("p");
-        neww.innerHTML = "Rasheed";
-        neww.id = "Output";
+        function disResult() {
+            let nameInput = document.getElementById("nameInput");
+            let output = document.getElementById("output");
 
-        replaceCont.replaceChild(neww, nameInput)
+            output.textContent = nameInput.value;
+        };
+
+        display.addEventListener('click', disResult);
 
         //Q8
         function changeAttr(){
