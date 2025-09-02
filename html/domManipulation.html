@@ -52,12 +52,21 @@
         </form>
 
         <!--Q8-->
-        <img src="images/handMoney.jpg" alt="Glowtrack" width="400" height="400" id="profilePic">
+        <img src="images/Glowtrack.webp" alt="Glowtrack" width="400" height="400" id="profilePic">
 
         <button id="chagatrr" onclick="changeAttr()">Change picture src atrribute</button>
 
         <!--Q9-->
         <div id="container"></div>
+
+        <!--Q10-->
+        <ul id="menu" style="list-style-type: none;">
+            <li>Profile</li>
+            <li>Dashboard</li>
+            <li>Setting</li>
+            <li>Logout</li>
+        </ul>
+        <button id="menubtn">Change 1st and last child color</button>
     </body>
     <script>
         //Q1
@@ -80,15 +89,15 @@
         };
 
         //Q3
-        let menu = document.getElementById("list");
+        let menu1 = document.getElementById("list");
         let list = document.createElement("li");
         list.innerHTML = "New Item";
 
-        menu.appendChild(list);
+        menu1.appendChild(list);
 
-        console.log(menu);
-        console.log(menu.textContent);
-        console.log(menu.innerText);
+        console.log(menu1);
+        console.log(menu1.textContent);
+        console.log(menu1.innerText);
 
         //Q4
         let deleteBtn = document.getElementById("deleteBtn");
@@ -147,14 +156,27 @@
         let paragraph1 = document.createElement("p");
         paragraph1.innerHTML = "Paragraph 1";
         let paragraph2 = document.createElement("p");
-        paragraph1.innerHTML = "Paragraph 2";
+        paragraph2.innerHTML = "Paragraph 2";
         let paragraph3 = document.createElement("p");
-        paragraph1.innerHTML = "Paragraph 3";
+        paragraph3.innerHTML = "Paragraph 3";
         let paragraph4 = document.createElement("p");
-        paragraph1.innerHTML = "Paragraph 4";
+        paragraph4.innerHTML = "Paragraph 4";
         let paragraph5 = document.createElement("p");
-        paragraph1.innerHTML = "Paragraph 5";
+        paragraph5.innerHTML = "Paragraph 5";
 
         container.append(paragraph1, paragraph2, paragraph3, paragraph4, paragraph5);
+
+        //Q10
+        function colorMenu(){
+        let menu = document.querySelector("#menu");
+        let firstl = menu.firstElementChild;
+        let lastl = menu.lastElementChild;
+
+        firstl.style.cssText = "color: green";
+        lastl.style.cssText = "color: blue";
+        }
+
+        let menubtn = document.getElementById("menubtn");
+        menubtn.addEventListener('click', colorMenu);
     </script>
 </html>
