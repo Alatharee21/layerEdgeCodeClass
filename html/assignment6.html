@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button{
+                display: block;
+                margin: 0 auto;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <!--Q1-->
+       <button onclick="changetext()" id="btn">Change Text</button>
+
+        <!--Q2-->
+        
+
+        <!--Q3-->
+        
+
+        <!--Q4-->
+        
+
+        <!--Q5-->
+        
+
+        <!--Q6-->
+        
+
+        <!--Q7-->
+        
+
+        
+        <!--Q8-->
+        
+        <!--Q9-->
+        
+
+        <!--Q10-->
+        
+    </body>
+    <script>
+    //Q1
+
+        function changetext(){
+        let button = document.getElementById("btn");
+        button.innerText = "Clicked"
+        };
+
+        button.addEventListener('click', changetext);
+
+        //Q2
+        function doMath(a, b, callback) {
+            return callback(a, b)
+        }
+
+        let sum = (a, b)=> a + b;
+        let product = (a, b)=> a * b;
+
+        console.log(doMath(2, 4, sum));
