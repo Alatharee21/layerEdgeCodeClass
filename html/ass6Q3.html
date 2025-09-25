@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="one" style="width: 400px; height: 400px; padding: 8px; background-color: blue; display: block;">
+            <div id="two" style="width: 200px; height: 200px; padding: 8px; background-color: red; display: block;">
+                <div id="three" style="width: 100px; height: 100px; padding: 8px; background-color: green; display: block;">
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let one = document.getElementById("one");
+        let two = document.getElementById("two");
+        let three = document.getElementById("three");
+
+        let listen = (event)=>{
+            event.stopPropagation();
+            alert("Third box clicked");
+        };
+
+        one.addEventListener('click', () => alert("First box clicked"));
+        two.addEventListener('click', () => alert("Second box clicked"));
+        three.addEventListener('click', listen);
+    </script>
+</html>
