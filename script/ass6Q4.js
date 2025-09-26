@@ -1,4 +1,4 @@
-let fulfilled = !true;
+
 
 let promisE = () =>{
         return new Promise((resolve, reject)=>{

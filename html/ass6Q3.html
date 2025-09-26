@@ -11,6 +11,14 @@
                 </div>
             </div>
         </div>
+
+        <ul style="list-style-type: none;" id="list">
+            <li>Item number 1</li>
+            <li>Item number 2</li>
+            <li>Item number 3</li>
+            <li>Item number 4</li>
+            <li>Item number 5</li>
+        </ul>
     </body>
     <script>
         let one = document.getElementById("one");
@@ -25,5 +33,16 @@
         one.addEventListener('click', () => alert("First box clicked"));
         two.addEventListener('click', () => alert("Second box clicked"));
         three.addEventListener('click', listen);
+
+        let list = document.getElementById("list");
+
+        function letevent(event){
+
+            if(event.target.tagName == "LI"){
+                alert("You clicked: " + event.target.textContent)
+            }
+        }
+
+        list.addEventListener('click', letevent)
     </script>
 </html>
